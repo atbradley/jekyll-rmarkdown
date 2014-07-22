@@ -36,7 +36,7 @@ jekyll.post = function(filename, title='', categories=c(), tags=c()) {
 
 .jekyll.write = function(filename, outp.filename, title='', categories=c(), tags=c()) {
   if ( !interactive()  && ( nchar(title) == 0 ) ) return()
-  cat(title)
+  
   if ( !nchar(title) ) {
     #TODO: ask for title.
   }
@@ -49,7 +49,6 @@ jekyll.post = function(filename, title='', categories=c(), tags=c()) {
   
   dr = paste(Sys.getenv('HOME'), '/jekyll', sep='')
   dr = getOption('jekyll.root', default=dr)
-  
   frontmatter = c(paste('title:', title))
   
   if ( length(categories) ) {
@@ -70,5 +69,4 @@ jekyll.post = function(filename, title='', categories=c(), tags=c()) {
   
   knit(filename, tmp.filepath)
   file.append(outp.filename, tmp.filepath)
-  c(outp.filename)
 }

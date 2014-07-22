@@ -26,3 +26,5 @@ jekyll.draft('mypost.Rmarkdown', 'This is my post', c('R', 'statistics'), c('blo
 
 `jekyll.post(filename, title='', categories=c(), tags=c())`  
 Same as `jekyll.draft()` but prepends the current date to the filename and places the output in your blog's `_posts` directory.
+
+Note that, for this to work, the markdown interpreter being used by your site must be configured to support Github Flavored Markdown. See [this blog post](http://simonvanderveldt.nl/jekyll-github-flavored-markdown-and-footnotes/) for details on how to do this.
