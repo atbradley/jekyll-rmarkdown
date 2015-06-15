@@ -1,8 +1,6 @@
-This project provides two methods for embedding RMarkdown documents in Jekyll:
-
 rmarkdown_converter.rb
 ======================
-A Jekyll plugin that provides an Rmarkdown "converter," so you can write your posts in RMarkdown and save them in your site's `_drafts` or `_posts` directory with the extension `Rmd` or `Rmarkdown`.
+A Jekyll plugin that provides an Rmarkdown "converter," so you can write your posts and pages in RMarkdown and save them in your site's `_drafts` or `_posts` directory with the extension `Rmd` or `Rmarkdown`.
 
 To install, simply save rmarkdown_converter.rb in your jekyll `_plugins` directory. You'll also need to install `rinruby`, probably [from RubyGems](http://rubygems.org/gems/rinruby): 
 
